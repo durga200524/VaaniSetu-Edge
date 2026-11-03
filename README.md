@@ -392,30 +392,26 @@ VaaniSetu-Edge/
 
 The structure above is an overview. Local environment files, virtual environments, and generated database files should not be committed to the repository.
 
-8. Installation and Setup
+---
 
-Prerequisites
+## 8. Installation and Setup
+
+### Prerequisites
 
 Install the following:
 
-Python 3.12
+- Python 3.12
+- Node.js
+- npm
+- Visual Studio Code
+- Git
+- Ollama
+- Qwen2.5 model
+- Gnani AI API access
 
-Node.js
+### Step 1: Clone the Repository
 
-npm
-
-Visual Studio Code
-
-Git
-
-Ollama
-
-Qwen2.5 model
-
-Gnani AI API access
-
-Step 1: Clone the Repository
-
+```bash
 git clone https://github.com/durga200524/VaaniSetu-Edge.git
 
 Navigate to the project:
@@ -757,5 +753,4 @@ VaaniSetu Edge aims to make AI-powered customer communication more accessible to
 By combining multilingual speech recognition, noise-resilient audio processing, customer intent detection, document-based knowledge retrieval, local language model inference, and speech generation, the platform provides an integrated voice-based customer support workflow.
 
 The project explores how voice intelligence and edge-assisted software design can help businesses improve customer communication while considering limited computing and network resources.
-
-VaaniSetu Edge – Making Multilingual Customer Communication Smarter and More Accessible.
+```
