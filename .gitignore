@@ -1,0 +1,16 @@
+.env
+.env.*
+!.env.example
+venv/.n.venv/
+**/venv/
+**/.venv/
+node_modules/
+**/node_modules/
+__pycache__/
+*.py[cod]
+chroma_db/
+**/chroma_db/
+*.log
+
+# Generated customer interaction records
+backend/data/resolution_passports/

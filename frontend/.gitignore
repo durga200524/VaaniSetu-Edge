@@ -1,0 +1,47 @@
+# Environment variables and API keys
+.env
+.env.*
+!.env.example
+
+# Python virtual environments
+venv/
+.venv/
+env/
+
+# Python cache files
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Python testing and coverage
+.pytest_cache/
+.coverage
+htmlcov/
+
+# ChromaDB and generated data
+chroma_db/
+backend/data/chroma_db/
+
+# Generated resolution records
+backend/data/resolution_passports/
+
+# Node dependencies
+node_modules/
+
+# Build output
+dist/
+build/
+
+# Vite cache
+.vite/
+
+# Environment and editor files
+.vscode/
+.idea/
+
+# Operating system files
+.DS_Store
+Thumbs.db
+
+# Log files
+*.log

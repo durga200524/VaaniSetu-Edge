@@ -1,0 +1,388 @@
+.edge-page {
+  width: 100%;
+  animation: edgeFadeIn 0.3s ease;
+}
+
+@keyframes edgeFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.edge-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 26px;
+}
+
+.edge-eyebrow {
+  color: #8b5cf6;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+}
+
+.edge-header h1 {
+  margin: 8px 0;
+  color: #172033;
+  font-size: 30px;
+}
+
+.edge-header p {
+  margin: 0;
+  color: #7b8497;
+  font-size: 14px;
+}
+
+.edge-header-icon {
+  display: grid;
+  place-items: center;
+  width: 58px;
+  height: 58px;
+  border-radius: 14px;
+  background: #eee9ff;
+  color: #7552d6;
+}
+
+.edge-simulation-card {
+  padding: 25px;
+  border: 1px solid #e9eaf1;
+  border-radius: 15px;
+  background: white;
+  box-shadow: 0 3px 15px rgba(30, 25, 70, 0.04);
+}
+
+.edge-card-heading {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #f0f0f4;
+  color: #7552d6;
+}
+
+.edge-card-heading h2 {
+  margin: 0;
+  color: #263149;
+  font-size: 18px;
+}
+
+.edge-input-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 22px;
+  margin-top: 24px;
+}
+
+.edge-field {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.edge-field label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #59647a;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.edge-field label svg {
+  color: #8565dc;
+}
+
+.edge-field input {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 12px 13px;
+  border: 1px solid #e2e5ed;
+  border-radius: 9px;
+  outline: none;
+  background: #fafbfe;
+  color: #263149;
+  font-size: 14px;
+}
+
+.edge-field input:focus {
+  border-color: #9676e8;
+  box-shadow: 0 0 0 3px rgba(139, 92, 246, 0.09);
+}
+
+.edge-connectivity {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  margin-top: 25px;
+  padding: 17px;
+  border: 1px solid #eeeafc;
+  border-radius: 11px;
+  background: #faf9ff;
+}
+
+.edge-connectivity > div {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.edge-connectivity strong {
+  color: #29344a;
+  font-size: 14px;
+}
+
+.edge-connectivity span {
+  color: #858da0;
+  font-size: 12px;
+}
+
+.edge-toggle {
+  position: relative;
+  width: 48px;
+  height: 26px;
+  flex-shrink: 0;
+  padding: 0;
+  border: none;
+  border-radius: 30px;
+  background: #cbd0dc;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.edge-toggle.enabled {
+  background: #22ad7c;
+}
+
+.edge-toggle span {
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: white;
+  transition: transform 0.2s ease;
+}
+
+.edge-toggle.enabled span {
+  transform: translateX(22px);
+}
+
+.edge-actions {
+  display: flex;
+  gap: 12px;
+  margin-top: 24px;
+}
+
+.edge-run-button,
+.edge-reset-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  padding: 12px 20px;
+  border-radius: 9px;
+  font-size: 13px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.edge-run-button {
+  border: none;
+  background: #7552d6;
+  color: white;
+}
+
+.edge-run-button:hover {
+  background: #6442c0;
+}
+
+.edge-run-button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.edge-reset-button {
+  border: 1px solid #e2e5ed;
+  background: white;
+  color: #59647a;
+}
+
+.edge-reset-button:hover {
+  background: #f7f7fb;
+}
+
+.edge-loading-icon {
+  animation: edgeSpin 1s linear infinite;
+}
+
+@keyframes edgeSpin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.edge-error {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  margin-top: 17px;
+  padding: 12px;
+  border-radius: 8px;
+  background: #fff1f2;
+  color: #dc2626;
+  font-size: 13px;
+}
+
+.edge-results {
+  display: grid;
+  gap: 18px;
+  margin-top: 24px;
+}
+
+.edge-result-banner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 23px;
+  border-radius: 13px;
+  background: linear-gradient(120deg, #382b72, #7656c8);
+  color: white;
+}
+
+.edge-result-banner span {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  opacity: 0.8;
+}
+
+.edge-result-banner h2 {
+  margin: 9px 0 0;
+  font-size: 22px;
+}
+
+.edge-assessment-card {
+  padding: 22px;
+  border: 1px solid #e9eaf1;
+  border-radius: 13px;
+  background: white;
+}
+
+.edge-assessment-card h3 {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  margin: 0 0 19px;
+  color: #29344a;
+  font-size: 16px;
+}
+
+.edge-assessment-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 13px;
+}
+
+.edge-assessment-item {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+  padding: 15px;
+  border: 1px solid #f0f0f4;
+  border-radius: 9px;
+  background: #fcfcfe;
+}
+
+.edge-assessment-item span {
+  color: #8a91a1;
+  font-size: 10px;
+  font-weight: 700;
+}
+
+.edge-assessment-item strong {
+  font-size: 13px;
+}
+
+.edge-status-good {
+  color: #16834d;
+}
+
+.edge-status-warning {
+  color: #c17a16;
+}
+
+.edge-status-critical {
+  color: #dc3636;
+}
+
+.edge-assessment-card ul {
+  display: grid;
+  gap: 12px;
+  margin: 0;
+  padding-left: 21px;
+  color: #59647a;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.edge-assessment-card > p {
+  color: #16834d;
+  font-size: 13px;
+}
+
+.edge-simulation-note {
+  display: flex;
+  align-items: flex-start;
+  gap: 11px;
+  padding: 15px;
+  border: 1px solid #e9eaf1;
+  border-radius: 10px;
+  background: #f8f9fc;
+  color: #747d90;
+}
+
+.edge-simulation-note svg {
+  flex-shrink: 0;
+  color: #7552d6;
+}
+
+.edge-simulation-note p {
+  margin: 0;
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+@media (max-width: 650px) {
+  .edge-header {
+    align-items: flex-start;
+  }
+
+  .edge-input-grid,
+  .edge-assessment-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .edge-simulation-card,
+  .edge-assessment-card {
+    padding: 17px;
+  }
+
+  .edge-actions {
+    flex-direction: column;
+  }
+
+  .edge-run-button,
+  .edge-reset-button {
+    width: 100%;
+  }
+}
